@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+
+header {
+    background: linear-gradient(90deg, #009246, #ffffff, #ce2b37);
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Conteúdo */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #009246;
+    margin-bottom: 15px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Página inicial */
+
+.inicio {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+.inicio h2 {
+    font-size: 30px;
+}
+
+/* Botão */
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #ce2b37;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #a91f2a;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 250px;
+}
+
+/* Celular */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 200px;
+    }
+
+    main {
+        width: 95%;
+    }
+}
+
+/* Formulário */
+
+.formulario {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formulario h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #009246;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006b34;
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.erro {
+    color: #ce2b37;
+}
+
+.sucesso {
+    color: #009246;
+}
